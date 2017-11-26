@@ -1,0 +1,78 @@
+body{
+    margin:0;
+}
+
+form{
+    border: 1px solid #f1f1f1;
+    padding:10px;
+}
+
+img.avatar {
+    width: 30%;
+    border-radius: 50%;
+    margin-left:35%;
+}
+
+#logo{
+    width:10%;
+    float:left;
+    margin-top:5px;
+}
+
+
+.parallax {
+    margin:0px;
+    background-image: url("../image/headerimage.jpg");
+
+    min-height: 620px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+hr{
+    border: 2px solid #2196F3;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    border: 3px solid #2196F3;
+}
